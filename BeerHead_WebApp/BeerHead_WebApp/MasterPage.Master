@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="BeerHead_WebApp.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>BEER HEAD BLOG</title>
+    <link href="assets/css/anasayfa.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="ustMenu">
+                <asp:Panel ID="pnl_girisVar" runat="server" Visible="false">
+                    <a href="#" class="uyeOlGirisYap">
+                        <asp:Literal ID="ltrl_kullanici" runat="server"></asp:Literal>
+                    </a>
+                    <asp:LinkButton ID="lbtn_cikis" runat="server" OnClick="lbtn_cikis_Click" CssClass="uyeOlGirisYap">Çıkış</asp:LinkButton>
+                </asp:Panel>
+                <asp:Panel ID="pnl_girisyok" runat="server">
+                    <a href="UyeKayit.aspx" class="uyeOlGirisYap">Üye Ol</a>
+                    <a href="UyeGiris.aspx" class="uyeOlGirisYap">Giriş Yap</a>
+                </asp:Panel>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="container">
+                <a href="Default.aspx">
+                    <img src="assets/Resimler/logo.png" class="logo" />
+                    <h1 class="logotext">Beer Head</h1>
+                </a>
+                <ul>
+                      <a href='Default.aspx'>
+                        <li>Tümü</li>
+                    </a>
+                    <asp:Repeater ID="rp_kategoriler" runat="server">
+                        <ItemTemplate>
+                            <a href='Default.aspx?kid=<%# Eval("ID") %>'>
+                                <li><%# Eval("Isim") %></li>
+                            </a>
+                        </ItemTemplate>
+                    </asp:Repeater>
+
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="sideBar">
+            <a href="#">
+                <img src="assets/Resimler/guvenlik-okulu-reklam-verebilirsiniz.png" style="padding-top:250px;" />
+            </a>
+        </div>
+
+    </form>
+</body>
+</html>

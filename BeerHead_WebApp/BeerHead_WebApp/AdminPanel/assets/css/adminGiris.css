@@ -1,0 +1,61 @@
+﻿h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+}
+
+.panelContainer {
+    width: 350px;
+    border: 1px solid #D9751E;
+    min-height: 200px;
+    border-radius: 10px;
+    margin: 300px auto;
+}
+
+.panelheader {
+    background-color: #F2F2F2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #D9751E;
+    text-align: center;
+    padding: 10px;
+}
+
+.panelContent {
+    padding: 20px;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+.inputbox {
+    width: 300px;
+    padding: 7px;
+    border: 1px solid #D9751E;
+    border-radius: 5px;
+}
+
+.girisButton {
+    width: 315px;
+    padding: 7px;
+    background-color: #D9751E;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #D9751E;
+}
+
+    .girisButton:hover {
+        background-color: #F2B441;
+        color: white;
+        cursor: pointer;
+    }
+.logo{
+   height:400px;
+   display:block;
+   margin:auto;
+   
+}

@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.master.cs" Inherits="BeerHead_WebApp.AdminPanel.AdminPanel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="assets/css/MainStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <img src="assets/SiteImages/pngwing.com.png" />
+            <h3 class="logo">Beer Head Yönetim Paneli</h3>
+            <asp:LinkButton ID="lbtn_cikis" runat="server" CssClass="exitButton" OnClick="lbtn_cikis_Click">Çıkış</asp:LinkButton>
+            <asp:Label ID="lbl_kullanici" runat="server" CssClass="userName">Kullanıcı Adı</asp:Label>
+        </div>
+        <div></div>
+        <div class="sidemenu">
+            <ul class="menu">
+                <a href="Default.aspx">
+                    <li>
+                        <img src="assets/SiteImages/216242_home_icon.png" />Anasayfa
+                    </li>
+                </a>
+                <a href="KategoriEkle.aspx">
+                    <li>
+                        <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Ekle
+                    </li>
+                </a>
+                <a href="KategoriListeleGridView.aspx">
+                    <li>
+                        <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Listele GridView
+                    </li>
+                </a>
+                <a href="KategoriListeleListView.aspx">
+                    <li>
+                        <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Listele ListView
+                    </li>
+                </a>
+                <a href="MakaleEkle.aspx">
+                    <li>
+                        <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Ekle
+                    </li>
+                </a>
+                <a href="MakaleListele.aspx">
+                    <li>
+                        <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Listele
+                    </li>
+                </a>
+                <a href="YorumOnayla.aspx">
+                    <li>
+                        <img src="assets/SiteImages/1564513_comment_message_voice_icon.png" />Onay Bekleyen Yorumlar</li>
+                </a>
+                <a href="YorumListele.aspx">
+                    <li>
+                        <img src="assets/SiteImages/1564513_comment_message_voice_icon.png" />Tüm Yorumlar</li>
+                </a>
+                <a href="UyeIslemleri.aspx">
+                    <li>
+                        <img src="assets/SiteImages/352174_user_icon.png" />Üye İşlemleri
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="assets/SiteImages/3669250_settings_ic_icon.png" />Admin İşlemleri
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="clear: both"></div>
+        <script>
+            CKEDITOR.replace('ContentPlaceHolder1_tb_icerik');
+         </script>
+    </form>
+</body>
+</html>

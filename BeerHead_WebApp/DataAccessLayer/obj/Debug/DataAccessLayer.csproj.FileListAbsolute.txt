@@ -1,0 +1,3 @@
+C:\Users\husey\source\repos\BeerHead_WebApp\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\husey\source\repos\BeerHead_WebApp\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.SuggestedBindingRedirects.cache
+C:\Users\husey\source\repos\BeerHead_WebApp\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache

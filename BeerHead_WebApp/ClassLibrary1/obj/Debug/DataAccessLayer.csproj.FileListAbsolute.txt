@@ -1,0 +1,6 @@
+C:\Users\husey\source\repos\BeerHead_WebApp\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\husey\source\repos\BeerHead_WebApp\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\husey\source\repos\BeerHead_WebApp\ClassLibrary1\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\husey\source\repos\BeerHead_WebApp\ClassLibrary1\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\husey\source\repos\BeerHead_WebApp\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\husey\source\repos\BeerHead_WebApp\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
